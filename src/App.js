@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-const API_URL = 'http://api-callbook.herokuapp.com';
+const API_URL = 'https://api-callbook.herokuapp.com';
 
 class App extends Component {
 

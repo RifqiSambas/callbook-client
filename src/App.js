@@ -23,12 +23,12 @@ class App extends Component {
 				<div className="col-xs-8 mb-4">
 					<h1>callbook</h1>
 					<p>list of programming book recomendation</p>
-					<input className="form-control" placeholder="cari buku" />
 				</div>
 				<div className="row">
 					{this.state.books.map((book) => (
 					<div className="col-md-3 mb-4">
 						<div className="card" key={book._id}>
+							<img className="card-img-top" src={book.image} alt={book.title} />
 							<div className="card-body">
 								<h5 className="card-title">
 									<a href={book.link_book}>{book.title}</a>
